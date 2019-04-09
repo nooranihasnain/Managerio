@@ -1,0 +1,8 @@
+C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\bin\Release\TrelloApp.exe.config
+C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\bin\Release\TrelloApp.exe
+C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\bin\Release\TrelloApp.pdb
+C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Release\TrelloApp.Managerio.resources
+C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Release\TrelloApp.Properties.Resources.resources
+C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Release\TrelloApp.csproj.GenerateResource.Cache
+C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Release\TrelloApp.exe
+C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Release\TrelloApp.pdb
