@@ -28,17 +28,7 @@ namespace TrelloApp
 
             //Task add and removal done
             //Need to add button to add task at runtime.
-            Task t = new Task("Download Ready Player One in 720P");
-            Task t3 = new Task("Task3");
-            Task t2 = new Task("Task2");
-            Task t4 = new Task("Task4");
-            AddTask(0, t);
-            AddTask(0, t3);
-            AddTask(0, t2);
-            RemoveTask(0, "Task3");
-            AddTask(0, t3);
-            RemoveTask(0, "Task3");
-            AddTask(0, t4);
+            
         }
 
         void FillComboBox()
@@ -47,6 +37,19 @@ namespace TrelloApp
             {
                 DaySelectionComboBox.Items.Add(AllDays[i].DayName);
             }
+            DaySelectionComboBox.SelectedIndex = 0;
+        }
+
+        bool IsPresent(int DayIndex, string TaskName)
+        {
+            for(int i=0; i < AllDays[DayIndex].TList.Count; i++)
+            {
+                if(AllDays[DayIndex].TList[i].TaskName == TaskName)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         GroupBox FindGroupBox(int DayIndex)
@@ -110,7 +113,7 @@ namespace TrelloApp
 
         public void AddTask(int DayIndex, Task T)
         {
-            if(AllDays[DayIndex].TList.Count < 9)
+            if(AllDays[DayIndex].TList.Count < 9 && !IsPresent(DayIndex,T.TaskName))
             {
                 AllDays[DayIndex].TList.Add(T);
                 Label TaskLabel = new Label();
@@ -127,6 +130,15 @@ namespace TrelloApp
                 TaskLabel.TextAlign = ContentAlignment.MiddleCenter;
                 FindGroupBox(DayIndex).Controls.Add(TaskLabel);
                 AllDays[DayIndex].YOffset += 60;
+            }
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            if(!string.IsNullOrEmpty(TaskInputTextBox.Text))
+            {
+                Task addTask = new Task(TaskInputTextBox.Text);
+                AddTask(DaySelectionComboBox.SelectedIndex, addTask);
             }
         }
     }

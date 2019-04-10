@@ -43,6 +43,7 @@ namespace TrelloApp
             this.label1 = new System.Windows.Forms.Label();
             this.TaskInputTextBox = new System.Windows.Forms.TextBox();
             this.DaySelectionComboBox = new System.Windows.Forms.ComboBox();
+            this.AddButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MondayGB
@@ -180,7 +181,7 @@ namespace TrelloApp
             this.TaskInputTextBox.MaxLength = 35;
             this.TaskInputTextBox.MinimumSize = new System.Drawing.Size(250, 30);
             this.TaskInputTextBox.Name = "TaskInputTextBox";
-            this.TaskInputTextBox.Size = new System.Drawing.Size(250, 30);
+            this.TaskInputTextBox.Size = new System.Drawing.Size(250, 27);
             this.TaskInputTextBox.TabIndex = 10;
             // 
             // DaySelectionComboBox
@@ -200,6 +201,21 @@ namespace TrelloApp
             this.DaySelectionComboBox.TabIndex = 11;
             this.DaySelectionComboBox.Text = "Day";
             // 
+            // AddButton
+            // 
+            this.AddButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddButton.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AddButton.Location = new System.Drawing.Point(820, 362);
+            this.AddButton.MinimumSize = new System.Drawing.Size(80, 30);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(80, 30);
+            this.AddButton.TabIndex = 12;
+            this.AddButton.Text = "Add";
+            this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
             // ManagerioMainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,6 +223,7 @@ namespace TrelloApp
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1346, 400);
+            this.Controls.Add(this.AddButton);
             this.Controls.Add(this.DaySelectionComboBox);
             this.Controls.Add(this.TaskInputTextBox);
             this.Controls.Add(this.label1);
@@ -244,6 +261,7 @@ namespace TrelloApp
         private Label label1;
         public TextBox TaskInputTextBox;
         public ComboBox DaySelectionComboBox;
+        public Button AddButton;
     }
 }
 
