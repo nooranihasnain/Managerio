@@ -41,6 +41,8 @@ namespace TrelloApp
             this.WednesdayGB = new System.Windows.Forms.GroupBox();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.TaskInputTextBox = new System.Windows.Forms.TextBox();
+            this.DaySelectionComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // MondayGB
@@ -168,6 +170,36 @@ namespace TrelloApp
             this.label1.TabIndex = 9;
             this.label1.Text = "With this application, your task management becomes easy peasy lemon squeezy ^_^";
             // 
+            // TaskInputTextBox
+            // 
+            this.TaskInputTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.TaskInputTextBox.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TaskInputTextBox.Font = new System.Drawing.Font("Montserrat", 12F);
+            this.TaskInputTextBox.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.TaskInputTextBox.Location = new System.Drawing.Point(400, 362);
+            this.TaskInputTextBox.MaxLength = 35;
+            this.TaskInputTextBox.MinimumSize = new System.Drawing.Size(250, 30);
+            this.TaskInputTextBox.Name = "TaskInputTextBox";
+            this.TaskInputTextBox.Size = new System.Drawing.Size(250, 30);
+            this.TaskInputTextBox.TabIndex = 10;
+            // 
+            // DaySelectionComboBox
+            // 
+            this.DaySelectionComboBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.DaySelectionComboBox.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.DaySelectionComboBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.DaySelectionComboBox.Font = new System.Drawing.Font("Montserrat", 13.5F);
+            this.DaySelectionComboBox.ForeColor = System.Drawing.SystemColors.Menu;
+            this.DaySelectionComboBox.FormattingEnabled = true;
+            this.DaySelectionComboBox.Location = new System.Drawing.Point(657, 362);
+            this.DaySelectionComboBox.MaxDropDownItems = 15;
+            this.DaySelectionComboBox.MaxLength = 50;
+            this.DaySelectionComboBox.MinimumSize = new System.Drawing.Size(150, 0);
+            this.DaySelectionComboBox.Name = "DaySelectionComboBox";
+            this.DaySelectionComboBox.Size = new System.Drawing.Size(150, 30);
+            this.DaySelectionComboBox.TabIndex = 11;
+            this.DaySelectionComboBox.Text = "Day";
+            // 
             // ManagerioMainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,6 +207,8 @@ namespace TrelloApp
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1346, 400);
+            this.Controls.Add(this.DaySelectionComboBox);
+            this.Controls.Add(this.TaskInputTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TitleLabel);
             this.Controls.Add(this.SundayGB);
@@ -208,6 +242,8 @@ namespace TrelloApp
         public GroupBox WednesdayGB;
         private Label TitleLabel;
         private Label label1;
+        public TextBox TaskInputTextBox;
+        public ComboBox DaySelectionComboBox;
     }
 }
 

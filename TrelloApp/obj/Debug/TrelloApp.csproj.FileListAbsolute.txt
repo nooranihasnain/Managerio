@@ -7,3 +7,12 @@ C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Debug\TrelloApp.csproj.Ge
 C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Debug\TrelloApp.exe
 C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Debug\TrelloApp.pdb
 C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Debug\TrelloApp.csprojResolveAssemblyReference.cache
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Debug\TrelloApp.exe.config
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.exe
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.pdb
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Debug\TrelloApp.exe
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Debug\TrelloApp.pdb
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.csprojResolveAssemblyReference.cache
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.ManagerioMainWindow.resources
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.Properties.Resources.resources
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.csproj.GenerateResource.Cache

@@ -24,10 +24,11 @@ namespace TrelloApp
             AllDays[5] = new Day("Saturday",5);
             AllDays[6] = new Day("Sunday",6);
             InitializeComponent();
+            FillComboBox();
 
             //Task add and removal done
             //Need to add button to add task at runtime.
-            Task t = new Task("Task1");
+            Task t = new Task("Download Ready Player One in 720P");
             Task t3 = new Task("Task3");
             Task t2 = new Task("Task2");
             Task t4 = new Task("Task4");
@@ -38,6 +39,14 @@ namespace TrelloApp
             AddTask(0, t3);
             RemoveTask(0, "Task3");
             AddTask(0, t4);
+        }
+
+        void FillComboBox()
+        {
+            for(int i=0; i< AllDays.Length; i++)
+            {
+                DaySelectionComboBox.Items.Add(AllDays[i].DayName);
+            }
         }
 
         GroupBox FindGroupBox(int DayIndex)
