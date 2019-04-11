@@ -113,23 +113,36 @@ namespace TrelloApp
 
         public void AddTask(int DayIndex, Task T)
         {
-            if(AllDays[DayIndex].TList.Count < 9 && !IsPresent(DayIndex,T.TaskName))
+            if(!IsPresent(DayIndex,T.TaskName))
             {
-                AllDays[DayIndex].TList.Add(T);
-                Label TaskLabel = new Label();
-                //Defining settings for label
-                TaskLabel.BackColor = Color.White;
-                TaskLabel.Name = T.TaskName;
-                TaskLabel.Location = new Point(10, 20 + AllDays[DayIndex].YOffset);
-                TaskLabel.MinimumSize = new Size(160, 50);
-                TaskLabel.AutoSize = false;
-                TaskLabel.Dock = DockStyle.None;
-                TaskLabel.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
-                TaskLabel.Size = new Size(160, 50);
-                TaskLabel.Text = T.TaskName;
-                TaskLabel.TextAlign = ContentAlignment.MiddleCenter;
-                FindGroupBox(DayIndex).Controls.Add(TaskLabel);
-                AllDays[DayIndex].YOffset += 60;
+                if(AllDays[DayIndex].TList.Count < 9)
+                {
+                    AllDays[DayIndex].TList.Add(T);
+                    Label TaskLabel = new Label();
+                    //Defining settings for label
+                    TaskLabel.BackColor = Color.White;
+                    TaskLabel.Name = T.TaskName;
+                    TaskLabel.Location = new Point(10, 20 + AllDays[DayIndex].YOffset);
+                    TaskLabel.MinimumSize = new Size(160, 50);
+                    TaskLabel.AutoSize = false;
+                    TaskLabel.Dock = DockStyle.None;
+                    TaskLabel.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+                    TaskLabel.Size = new Size(160, 50);
+                    TaskLabel.Text = T.TaskName;
+                    TaskLabel.TextAlign = ContentAlignment.MiddleCenter;
+                    FindGroupBox(DayIndex).Controls.Add(TaskLabel);
+                    AllDays[DayIndex].YOffset += 60;
+                }
+                else
+                {
+                    MessageBox.Show("Oof! No more space for additional tasks!", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Oof! The task is already in the day with the same name.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -139,6 +152,11 @@ namespace TrelloApp
             {
                 Task addTask = new Task(TaskInputTextBox.Text);
                 AddTask(DaySelectionComboBox.SelectedIndex, addTask);
+            }
+            else
+            {
+                MessageBox.Show("Task name can not be empty", "Empty task name",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
