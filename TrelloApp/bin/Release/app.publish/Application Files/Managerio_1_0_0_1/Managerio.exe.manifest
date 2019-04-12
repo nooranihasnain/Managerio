@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Managerio.exe" version="1.0.0.1" publicKeyToken="a70e00b108e20218" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Managerio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Managerio.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Managerio.exe" size="15296">
+      <assemblyIdentity name="Managerio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Wd9WLMP7XuU6iTT1n6JfM02WWGwKX2anc8x8UpeqM5Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Managerio.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Zephyr-PC\Zephyr" issuerKeyHash="ebdcedeb6e5b488ab76925e6249cccf8ddb7576d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>vOPvhdgLD/R86b1gVvj/6s332x1gizqfByronR2kGGw=</DigestValue></Reference></SignedInfo><SignatureValue>iHkY2NCebNftURIqbwAXPfyPiTRzAQIvs/34vmB6PVr7Lhh5FVZzwB1rm8gZo+CWluahj6AvV9ZRnqKyC8Y1tncIfVk99rh5YSb/QHqfpNTyJEHVpB8ykpD63anlxnylVzgg9iNcah8+U6zBFJbnhkHrOKlpfWLWj7HaNFvohYY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zyyCq2eD5K0H+Su6rQiDLJDWldTaGMyOzyzBqALHbhtPsYbgxn2lHIgRC/IwRtZ/qWPJsdApXRsmR2jOOB8xGTUlvqR3N6LUqutoE+kAKqdHme0t6edXq3KiVbi+qd1dI0AXCdzJQ++1NwHkp2kCNICc9BAdvTHr/fgFQTgN89c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6c18a41d9de82a079f3a8b601ddbf7cdeafff85660bde97cf40f0bd885efe3bc" Description="" Url=""><as:assemblyIdentity name="Managerio.exe" version="1.0.0.1" publicKeyToken="a70e00b108e20218" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Zephyr-PC\Zephyr</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hkCe2bVr66JBrB6wTC8KqeLZeu5PqRIEBm5nKKTpXOg=</DigestValue></Reference></SignedInfo><SignatureValue>BEZYEgMl+a0l29TkR22vbVQSMilP/7Cd4910Pf/d8Dpk+zrgllvB9AJ0lhK66yiXVcuep8ikv5138GYo6bzsOJwzl8FnobB6BWVvxDc1K1kF1K5yAolvo56bHTorMVSaewn2gO2byhhAdTB5nG4iENinBdYLhixGzlO0NuEIWPg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zyyCq2eD5K0H+Su6rQiDLJDWldTaGMyOzyzBqALHbhtPsYbgxn2lHIgRC/IwRtZ/qWPJsdApXRsmR2jOOB8xGTUlvqR3N6LUqutoE+kAKqdHme0t6edXq3KiVbi+qd1dI0AXCdzJQ++1NwHkp2kCNICc9BAdvTHr/fgFQTgN89c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQefEsMoCehZdNdbgaoWv4NDANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAWgBlAHAAaAB5AHIALQBQAEMAXABaAGUAcABoAHkAcjAeFw0xOTA0MTIxNzI1MDNaFw0yMDA0MTEyMzI1MDNaMCsxKTAnBgNVBAMeIABaAGUAcABoAHkAcgAtAFAAQwBcAFoAZQBwAGgAeQByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPLIKrZ4PkrQf5K7qtCIMskNaV1NoYzI7PLMGoAsduG0+xhuDGfaUciBEL8jBG1n+pY8mx0CldGyZHaM44HzEZNSW+pHc3otSq62gT6QAqp0eZ7S3p51ercqJVuL6p3V0jQBcJ3MlD77U3AeSnaQI0gJz0EB29Mev9+AVBOA3z1wIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAG+6xAT9PD4hjhiswAaxnBRoeGDSMSr5E+lfi1ErVnu3t+m29OZyV97hFV2r7qpaSJS5ADMWSrA3TYeXRAiDhtIyM5kTbGvl90IMXN+CqTwJG3yTLq4t69BiHql5cHPxMJ+i/bZQI9zFqvWgTmz60HjFff3KQ8EtHlytOHcKbe4W</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -16,3 +16,8 @@ C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.csprojResolveAss
 C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.ManagerioMainWindow.resources
 C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.Properties.Resources.resources
 C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.csproj.GenerateResource.Cache
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Debug\TrelloApp.exe.manifest
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Debug\TrelloApp.application
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.exe.manifest
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Debug\TrelloApp.application
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Debug\Managerio.exe.config

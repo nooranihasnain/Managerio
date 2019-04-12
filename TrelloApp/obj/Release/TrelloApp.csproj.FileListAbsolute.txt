@@ -6,3 +6,16 @@ C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Release\TrelloApp.Propert
 C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Release\TrelloApp.csproj.GenerateResource.Cache
 C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Release\TrelloApp.exe
 C:\Users\Zephyr\Desktop\Trello\TrelloApp\TrelloApp\obj\Release\TrelloApp.pdb
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Release\Managerio.exe.config
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Release\Managerio.exe.manifest
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Release\Managerio.application
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Release\Managerio.exe
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\bin\Release\Managerio.pdb
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Release\TrelloApp.ManagerioMainWindow.resources
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Release\Managerio.Properties.Resources.resources
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Release\TrelloApp.csproj.GenerateResource.Cache
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Release\Managerio.exe.manifest
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Release\Managerio.application
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Release\Managerio.exe
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Release\Managerio.pdb
+C:\Users\Zephyr\Desktop\Managerio\TrelloApp\obj\Release\TrelloApp.csprojResolveAssemblyReference.cache
