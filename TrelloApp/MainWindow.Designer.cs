@@ -40,7 +40,7 @@ namespace TrelloApp
             this.ThursdayGB = new System.Windows.Forms.GroupBox();
             this.WednesdayGB = new System.Windows.Forms.GroupBox();
             this.TitleLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.DescriptionLabel = new System.Windows.Forms.Label();
             this.TaskInputTextBox = new System.Windows.Forms.TextBox();
             this.DaySelectionComboBox = new System.Windows.Forms.ComboBox();
             this.AddButton = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@ namespace TrelloApp
             this.SaturdayGB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.SaturdayGB.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaturdayGB.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.SaturdayGB.Location = new System.Drawing.Point(1138, 71);
+            this.SaturdayGB.Location = new System.Drawing.Point(952, 71);
             this.SaturdayGB.MinimumSize = new System.Drawing.Size(180, 90);
             this.SaturdayGB.Name = "SaturdayGB";
             this.SaturdayGB.Size = new System.Drawing.Size(180, 90);
@@ -113,7 +113,7 @@ namespace TrelloApp
             this.SundayGB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.SundayGB.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SundayGB.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.SundayGB.Location = new System.Drawing.Point(952, 71);
+            this.SundayGB.Location = new System.Drawing.Point(1138, 71);
             this.SundayGB.MinimumSize = new System.Drawing.Size(180, 90);
             this.SundayGB.Name = "SundayGB";
             this.SundayGB.Size = new System.Drawing.Size(180, 90);
@@ -161,15 +161,15 @@ namespace TrelloApp
             this.TitleLabel.TabIndex = 8;
             this.TitleLabel.Text = "MANAGERIO";
             // 
-            // label1
+            // DescriptionLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(391, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(614, 18);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "With this application, your task management becomes easy peasy lemon squeezy ^_^";
+            this.DescriptionLabel.AutoSize = true;
+            this.DescriptionLabel.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescriptionLabel.Location = new System.Drawing.Point(391, 37);
+            this.DescriptionLabel.Name = "DescriptionLabel";
+            this.DescriptionLabel.Size = new System.Drawing.Size(614, 18);
+            this.DescriptionLabel.TabIndex = 9;
+            this.DescriptionLabel.Text = "With this application, your task management becomes easy peasy lemon squeezy ^_^";
             // 
             // TaskInputTextBox
             // 
@@ -223,12 +223,12 @@ namespace TrelloApp
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1346, 400);
+            this.Controls.Add(this.SundayGB);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.DaySelectionComboBox);
             this.Controls.Add(this.TaskInputTextBox);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DescriptionLabel);
             this.Controls.Add(this.TitleLabel);
-            this.Controls.Add(this.SundayGB);
             this.Controls.Add(this.SaturdayGB);
             this.Controls.Add(this.FridayGB);
             this.Controls.Add(this.ThursdayGB);
@@ -258,7 +258,7 @@ namespace TrelloApp
         public GroupBox ThursdayGB;
         public GroupBox WednesdayGB;
         private Label TitleLabel;
-        private Label label1;
+        private Label DescriptionLabel;
         public TextBox TaskInputTextBox;
         public ComboBox DaySelectionComboBox;
         public Button AddButton;

@@ -98,7 +98,8 @@ namespace TrelloApp
                     {
                         AllDays[DayIndex].TList.RemoveAt(i);
                         GroupBox dBox = FindGroupBox(DayIndex);
-                        dBox.Controls.RemoveByKey(TName);
+                        //dBox.Controls.RemoveByKey(TName);
+                        dBox.Controls.RemoveAt(i);
                         AllDays[DayIndex].YOffset -= 60;
                         for(int j = i; j <dBox.Controls.Count ; j++)
                         {
@@ -118,19 +119,19 @@ namespace TrelloApp
                 if(AllDays[DayIndex].TList.Count < 9)
                 {
                     AllDays[DayIndex].TList.Add(T);
-                    Label TaskLabel = new Label();
-                    //Defining settings for label
-                    TaskLabel.BackColor = Color.White;
-                    TaskLabel.Name = T.TaskName;
-                    TaskLabel.Location = new Point(10, 20 + AllDays[DayIndex].YOffset);
-                    TaskLabel.MinimumSize = new Size(160, 50);
-                    TaskLabel.AutoSize = false;
-                    TaskLabel.Dock = DockStyle.None;
-                    TaskLabel.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
-                    TaskLabel.Size = new Size(160, 50);
-                    TaskLabel.Text = T.TaskName;
-                    TaskLabel.TextAlign = ContentAlignment.MiddleCenter;
-                    FindGroupBox(DayIndex).Controls.Add(TaskLabel);
+                    //Trying out buttons
+                    Button TaskButton = new Button();
+                    TaskButton.BackColor = Color.White;
+                    TaskButton.Text = T.TaskName;
+                    TaskButton.Location = new Point(10, 20 + AllDays[DayIndex].YOffset);
+                    TaskButton.MinimumSize = new Size(160, 50);
+                    TaskButton.AutoSize = false;
+                    TaskButton.Dock = DockStyle.None;
+                    TaskButton.Anchor = (AnchorStyles.Top | AnchorStyles.Left);
+                    TaskButton.Size = new Size(160, 50);
+                    TaskButton.TextAlign = ContentAlignment.MiddleCenter;
+                    TaskButton.Click += new EventHandler(DeleteTask_Click);
+                    FindGroupBox(DayIndex).Controls.Add(TaskButton);
                     AllDays[DayIndex].YOffset += 60;
                 }
                 else
@@ -158,6 +159,23 @@ namespace TrelloApp
                 MessageBox.Show("Task name can not be empty", "Empty task name",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void DeleteTask_Click(object sender, EventArgs e)
+        {
+            Button aButton = sender as Button;
+            string TaskName = aButton.Text;
+            string Day = aButton.Parent.Text;
+            int DayIndex = 0;
+            for (int i = 0; i < AllDays.Length; i++)
+            {
+                if(AllDays[i].DayName == Day)
+                {
+                    DayIndex = i;
+                    break;
+                }
+            }
+            RemoveTask(DayIndex, TaskName);
         }
     }
 }
